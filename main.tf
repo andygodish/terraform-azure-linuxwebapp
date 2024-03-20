@@ -21,8 +21,8 @@ resource "azurerm_linux_web_app" "linux_web_app" {
     health_check_path                       = var.health_check_path
 
     application_stack {
-      docker_image        = local.application_stack["docker_registry_url"]
-      docker_image_tag    = local.application_stack["docker_image_name"]
+      docker_image     = local.application_stack["docker_registry_url"]
+      docker_image_tag = local.application_stack["docker_image_name"]
     }
   }
 
