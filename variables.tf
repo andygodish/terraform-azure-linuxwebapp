@@ -8,6 +8,11 @@ variable "app_prefix" {
   nullable    = false
   description = "The 3 or 4 character mnemonic for the application name "
 }
+variable "app_settings" {
+  type        = map(string)
+  default     = {}
+  description = "Application setting"
+}
 variable "application_stack" {
   type = map(string)
   default = {
@@ -15,6 +20,16 @@ variable "application_stack" {
     docker_image_tag = "latest"
   }
   description = "Application stack configuration, run `az webapp list-runtimes --os-type linux` to get the list of supported stacks"
+}
+variable "asp_plan_id" {
+  type        = string
+  nullable    = false
+  description = "The ID of the app. service plan this functioan app needs to be deployed to"
+}
+variable "container_registry_use_managed_identity" {
+  type        = bool
+  default     = true
+  description = "site_config block configuration option"
 }
 variable "health_check_path" {
   type        = string
