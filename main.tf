@@ -22,15 +22,6 @@ resource "azurerm_linux_web_app" "linux_web_app" {
 
     application_stack {
       docker_image        = local.application_stack["docker_image"]
-      docker_image_tag    = local.application_stack["docker_image_tag"]
-      dotnet_version      = local.application_stack["dotnet_version"]
-      java_server         = local.application_stack["java_server"]
-      java_server_version = local.application_stack["java_server_version"]
-      java_version        = local.application_stack["java_version"]
-      php_version         = local.application_stack["php_version"]
-      python_version      = local.application_stack["python_version"]
-      node_version        = local.application_stack["node_version"]
-      ruby_version        = local.application_stack["ruby_version"]
     }
   }
 
