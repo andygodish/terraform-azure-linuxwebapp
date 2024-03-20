@@ -30,7 +30,7 @@ No modules.
 | <a name="input_app_env"></a> [app\_env](#input\_app\_env) | The env name: dev, qa, test or prod | `string` | n/a | yes |
 | <a name="input_app_prefix"></a> [app\_prefix](#input\_app\_prefix) | The 3 or 4 character mnemonic for the application name | `string` | n/a | yes |
 | <a name="input_app_settings"></a> [app\_settings](#input\_app\_settings) | Application setting | `map(string)` | `{}` | no |
-| <a name="input_application_stack"></a> [application\_stack](#input\_application\_stack) | Application stack configuration, run `az webapp list-runtimes --os-type linux` to get the list of supported stacks | `map(string)` | <pre>{<br>  "docker_image": "mcr.microsoft.comappsvc/staticsite:latest",<br>  "docker_image_tag": "latest"<br>}</pre> | no |
+| <a name="input_application_stack"></a> [application\_stack](#input\_application\_stack) | Application stack configuration, run `az webapp list-runtimes --os-type linux` to get the list of supported stacks | `map(string)` | `{}` | no |
 | <a name="input_asp_plan_id"></a> [asp\_plan\_id](#input\_asp\_plan\_id) | The ID of the app. service plan this functioan app needs to be deployed to | `string` | n/a | yes |
 | <a name="input_container_registry_use_managed_identity"></a> [container\_registry\_use\_managed\_identity](#input\_container\_registry\_use\_managed\_identity) | site\_config block configuration option | `bool` | `true` | no |
 | <a name="input_health_check_path"></a> [health\_check\_path](#input\_health\_check\_path) | Relative endpoint for the healthcheck resources. Ex: /health | `string` | `""` | no |

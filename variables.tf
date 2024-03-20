@@ -14,8 +14,8 @@ variable "app_settings" {
   description = "Application setting"
 }
 variable "application_stack" {
-  type = map(string)
-  default = {}
+  type        = map(string)
+  default     = {}
   description = "Application stack configuration, run `az webapp list-runtimes --os-type linux` to get the list of supported stacks"
 }
 variable "asp_plan_id" {

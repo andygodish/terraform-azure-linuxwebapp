@@ -6,5 +6,5 @@ locals {
     "terraform" : "yes",
   }, var.tags)
   application_stack_struct = {}
-  application_stack = merge(local.application_stack_struct, var.application_stack)
+  application_stack        = merge(local.application_stack_struct, var.application_stack)
 }
