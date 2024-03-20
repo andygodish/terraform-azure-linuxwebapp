@@ -15,10 +15,7 @@ variable "app_settings" {
 }
 variable "application_stack" {
   type = map(string)
-  default = {
-    docker_image     = "mcr.microsoft.comappsvc/staticsite:latest"
-    docker_image_tag = "latest"
-  }
+  default = {}
   description = "Application stack configuration, run `az webapp list-runtimes --os-type linux` to get the list of supported stacks"
 }
 variable "asp_plan_id" {
