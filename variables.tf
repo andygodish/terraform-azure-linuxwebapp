@@ -75,6 +75,6 @@ variable "unique_name_string" {
 }
 variable "virtual_network_subnet_id" {
   type        = string
-  default = null
+  default     = null
   description = "The outbound subnet that this app needs to be bound to"
 }
