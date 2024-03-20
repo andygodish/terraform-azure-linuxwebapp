@@ -5,6 +5,9 @@ locals {
   tags = merge({
     "terraform" : "yes",
   }, var.tags)
-  application_stack_struct = {}
-  application_stack        = merge(local.application_stack_struct, var.application_stack)
+  application_stack_struct = {
+    docker_registry_url = null
+    docker_image_name   = null
+  }
+  application_stack = merge(local.application_stack_struct, var.application_stack)
 }
