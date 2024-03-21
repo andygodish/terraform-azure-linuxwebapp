@@ -21,6 +21,7 @@ No modules.
 
 | Name | Type |
 |------|------|
+| [azurerm_app_service_custom_hostname_binding.custom_hostname](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/app_service_custom_hostname_binding) | resource |
 | [azurerm_linux_web_app.linux_web_app](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/linux_web_app) | resource |
 
 ## Inputs
@@ -34,6 +35,7 @@ No modules.
 | <a name="input_asp_plan_id"></a> [asp\_plan\_id](#input\_asp\_plan\_id) | The ID of the app. service plan this functioan app needs to be deployed to | `string` | n/a | yes |
 | <a name="input_container_registry_use_managed_identity"></a> [container\_registry\_use\_managed\_identity](#input\_container\_registry\_use\_managed\_identity) | site\_config block configuration option | `bool` | `true` | no |
 | <a name="input_health_check_path"></a> [health\_check\_path](#input\_health\_check\_path) | Relative endpoint for the healthcheck resources. Ex: /health | `string` | `""` | no |
+| <a name="input_hostname"></a> [hostname](#input\_hostname) | Optional custom hostname for the web app. | `string` | `null` | no |
 | <a name="input_identity_ids"></a> [identity\_ids](#input\_identity\_ids) | List of user assigned identity IDs | `list(string)` | `null` | no |
 | <a name="input_location"></a> [location](#input\_location) | The AZURE region location where this resource will be deployed to | `string` | n/a | yes |
 | <a name="input_public_network_access_enabled"></a> [public\_network\_access\_enabled](#input\_public\_network\_access\_enabled) | Should public network access be enabled for the Web App. Defaults to | `string` | `"true"` | no |
