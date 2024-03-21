@@ -35,7 +35,7 @@ resource "azurerm_linux_web_app" "linux_web_app" {
 }
 
 resource "azurerm_app_service_custom_hostname_binding" "custom_hostname" {
-  count = var.hostname != null && var.hostname != "" ? 1 : 0 # Only create the resource if hostname is provided
+  count = var.hostname != null || var.hostname != "" ? 1 : 0 # Only create the resource if hostname is provided
 
   hostname            = var.hostname
   app_service_name    = azurerm_linux_web_app.linux_web_app.name
