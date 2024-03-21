@@ -34,6 +34,11 @@ variable "health_check_path" {
   description = "Relative endpoint for the healthcheck resources. Ex: /health"
   default     = ""
 }
+variable "hostname" {
+  description = "Optional custom hostname for the web app."
+  type        = string
+  default     = null
+}
 variable "identity_ids" {
   type        = list(string)
   description = "List of user assigned identity IDs"
